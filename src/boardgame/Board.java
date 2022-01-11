@@ -35,7 +35,13 @@ public class Board {
 	}
 	
 	
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
 	
+	public Piece piece(Position position) {  // Overload, same method, different signature
+		return pieces[position.getRow()][position.getColumn()];
+	}
 	
 	
 
